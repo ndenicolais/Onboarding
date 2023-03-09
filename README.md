@@ -47,3 +47,4 @@ com.denicks21.roomdatabase      # Root Package
 <p float="left">
 <img height="500em" src="screenshots/Screenshot01.png" title="Onboarding's screen preview">
 <img height="500em" src="screenshots/Screenshot02.png" title="Onboarding's screen preview">
+<img height="500em" src="screenshots/Screenshot03.png" title="Onboarding's screen preview">
