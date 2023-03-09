@@ -19,7 +19,7 @@ Navigation refers to the interactions that allow users to navigate across, into,
 
 The ViewModel class is a business logic or screen level state holder. It exposes state to the UI and encapsulates related business logic. Its principal advantage is that it caches state and persists it through configuration changes. This means that your UI doesn’t have to fetch data again when navigating between activities, or following configuration changes, such as when rotating the screen.
 
-### Pager
+#### Pager
 A library which provides paging layouts for Jetpack Compose. It has similar proprieties of Android's ViewPager.
 
 ## 🛠️ Package Structures
