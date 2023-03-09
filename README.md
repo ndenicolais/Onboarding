@@ -14,6 +14,7 @@ com.denicks21.roomdatabase      # Root Package
 ├── navigation                  # Navigation folder
 │   ├── NavGraph                # Contains all of app destinations and actions.
 │   └── NavScreens              # Contains a sealed class with object corresponds to a screen and its routes.
+│   └── OnBoardingScreens       # Contains a sealed class with object corresponds to the onboarding's screen and its routes.
 |
 ├── repository                  # Repository folder
 │   ├── DataStoreRepository     # Repository to access Dao.
@@ -27,7 +28,7 @@ com.denicks21.roomdatabase      # Root Package
 │   ├── composables             # Composable components
 |   │   ├── CustomBackPress     # Component that control and prevent back button action.
 |   │   ├── FinishButton        # Button that completes the onboarding.
-|   │   ├── TopComponent        # Top bar of onboarding component.
+|   │   ├── TopElements         # Top elements of onboarding component.
 |
 ├── theme                       # Theme components folder
 |   │   ├── Color               # Color palette used by the app.
