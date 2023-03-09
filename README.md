@@ -26,8 +26,8 @@ com.denicks21.roomdatabase      # Root Package
 ├── ui                          # UI resources folder
 │   ├── composables             # Composable components
 |   │   ├── CustomBackPress     # Component that control and prevent back button action.
-|   │   ├── CustomDrawer        # Navigation drawer menu with app screens.
-|   │   ├── CustomTextField     # TextField customized for entering input details.
+|   │   ├── FinishButton        # Button that completes the onboarding.
+|   │   ├── TopComponent        # Top bar of Onboarding component.
 |
 ├── theme                       # Theme components folder
 |   │   ├── Color               # Color palette used by the app.
@@ -39,11 +39,10 @@ com.denicks21.roomdatabase      # Root Package
 |   │   ├── HomeViewModel       # Model that interact with repository class.
 |   │   ├── IntroViewModel      # Model that interact with repository class.
 ├── MainActivity                # Main activity
-├── OnBoarding                # Trigger Hilt's code generation.
+├── OnBoarding                  # Trigger Hilt's code generation.
 ```
 
 ## 📎 Screenshots
 <p float="left">
 <img height="500em" src="screenshots/Screenshot01.png" title="Onboarding's screen preview">
 <img height="500em" src="screenshots/Screenshot02.png" title="Onboarding's screen preview">
-<img height="500em" src="screenshots/Screenshot03.png" title="Onboarding's screen preview">
