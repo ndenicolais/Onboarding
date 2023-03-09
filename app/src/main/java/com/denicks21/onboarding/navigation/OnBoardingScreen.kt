@@ -1,4 +1,4 @@
-package com.denicks21.onboarding.util
+package com.denicks21.onboarding.navigation
 
 import android.annotation.SuppressLint
 import androidx.annotation.DrawableRes

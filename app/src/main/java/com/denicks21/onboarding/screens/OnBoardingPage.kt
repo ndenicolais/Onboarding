@@ -23,7 +23,7 @@ import com.denicks21.onboarding.ui.composables.FinishButton
 import com.denicks21.onboarding.ui.composables.TopComponent
 import com.denicks21.onboarding.ui.theme.GreyDark
 import com.denicks21.onboarding.ui.theme.GreyLight
-import com.denicks21.onboarding.util.OnBoardingScreen
+import com.denicks21.onboarding.navigation.OnBoardingScreen
 import com.denicks21.onboarding.viewmodels.HomeViewModel
 import com.google.accompanist.pager.*
 import kotlinx.coroutines.launch
