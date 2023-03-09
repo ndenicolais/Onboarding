@@ -2,7 +2,7 @@
 > <b>Author: Nicola De Nicolais</b>
 
 ## 📍 Description
-Android application built with Kotlin and Jetpack Compose that shows how create an Onboarding component in Compose.
+Android application built with Kotlin and Jetpack Compose that shows how to create an Onboarding screen design process in Compose.
 
 ## ⚡ Structure
 ### Tech Stacks
