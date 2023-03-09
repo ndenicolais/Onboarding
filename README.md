@@ -19,15 +19,15 @@ com.denicks21.roomdatabase      # Root Package
 │   ├── DataStoreRepository     # Repository to access Dao.
 |
 ├── screen                      # App screens folder
-|   │   ├── HomePage            # Page containing information about the app and developer profile.
+|   │   ├── HomePage            # Main page of the app. It appear after clicking the final button.
 |   │   ├── IntroPage           # Splashscreen of the app.
-|   │   ├── OnBoardingPage         # Page that allows to insert a new user.
+|   │   ├── OnBoardingPage      # Page containing onboarding structure.
 │
 ├── ui                          # UI resources folder
 │   ├── composables             # Composable components
 |   │   ├── CustomBackPress     # Component that control and prevent back button action.
 |   │   ├── FinishButton        # Button that completes the onboarding.
-|   │   ├── TopComponent        # Top bar of Onboarding component.
+|   │   ├── TopComponent        # Top bar of onboarding component.
 |
 ├── theme                       # Theme components folder
 |   │   ├── Color               # Color palette used by the app.
