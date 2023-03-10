@@ -44,7 +44,7 @@ com.denicks21.roomdatabase      # Root Package
 |   │   ├── OnBoardingPage      # Page containing onboarding structure.
 │
 ├── ui                          # UI resources folder
-│   ├── composables             # Composable components
+│   ├── composables             # Composable components folder
 |   │   ├── CustomBackPress     # Component that control and prevent back button action.
 |   │   ├── FinishButton        # Button that completes the onboarding.
 |   │   ├── TopElements         # Top elements of onboarding component.
