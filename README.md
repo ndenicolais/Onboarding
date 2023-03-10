@@ -26,6 +26,7 @@ A library which provides paging layouts for Jetpack Compose. It has similar prop
 
 ```
 com.denicks21.roomdatabase      # Root Package
+│
 ├── di                          # DI folder
 │   ├── AppModule               # Inject repository in the constructor.
 |
@@ -57,6 +58,7 @@ com.denicks21.roomdatabase      # Root Package
 ├── viewmodels                  # ViewModel folder
 |   │   ├── HomeViewModel       # Model that interact with repository class.
 |   │   ├── IntroViewModel      # Model that interact with repository class.
+│
 ├── MainActivity                # Main activity
 ├── OnBoarding                  # Trigger Hilt's code generation.
 ```
