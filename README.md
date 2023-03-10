@@ -22,7 +22,7 @@ The ViewModel class is a business logic or screen level state holder. It exposes
 #### Pager
 A library which provides paging layouts for Jetpack Compose. It has similar proprieties of Android's ViewPager.
 
-## 🛠️ Package Structures
+## 🛠️ Package Structure
 
 ```
 com.denicks21.roomdatabase      # Root Package
