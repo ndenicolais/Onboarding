@@ -2,7 +2,16 @@
 > <b>Author: Nicola De Nicolais</b>
 
 ## 📍 Description
-Android application built with Kotlin and Jetpack Compose that shows how to create an Onboarding screen design process in Compose.
+Android application built with Kotlin and Jetpack Compose that shows how to create an Onboarding screen design process in Compose.<br/><br/>
+Use an onboarding screen allow to show a first-time user how to get the most from your app, present information at app startup.<br/>
+The onboarding screen can be understood as a virtual unboxing of an application. Users go through a series of screens which finally directs users to the application interface.<br/>
+The purpose of Onboarding screen can have different aspects, for example:<br/>
+- Welcome the user who opens the application for the first time.<br/>
+- Describe the features of the application.<br/>
+- Describe the features of the application.<br/>
+- Allow users to register or log in.<br/>
+- Allow users to customize certain aspects of the application.
+- And many other customizations...
 
 ## ⚡ Structure
 ### Tech Stacks
