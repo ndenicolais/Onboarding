@@ -21,7 +21,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.denicks21.onboarding.R
-import com.denicks21.onboarding.navigation.NavScreens
 import com.denicks21.onboarding.ui.theme.GreyDark
 import kotlinx.coroutines.delay
 
@@ -34,13 +33,11 @@ fun IntroPage(navController: NavHostController) {
             targetValue = 0.7f,
             animationSpec = tween(
                 durationMillis = 500,
-                easing = {
-                    OvershootInterpolator(4f).getInterpolation(it)
-                }
+                easing = { OvershootInterpolator(4f).getInterpolation(it) }
             )
         )
         delay(500L)
-        navController.navigate(NavScreens.OnBoardingPage.route)
+        navController.navigate("OnBoarding")
     }
     Box(
         contentAlignment = Alignment.Center,
@@ -52,9 +49,7 @@ fun IntroPage(navController: NavHostController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = stringResource(
-                    id = R.string.app_name
-                ),
+                text = stringResource(id = R.string.app_name),
                 modifier = Modifier.fillMaxWidth(),
                 color = GreyDark,
                 fontSize = 50.sp,
@@ -62,9 +57,7 @@ fun IntroPage(navController: NavHostController) {
                 textAlign = TextAlign.Center
             )
             Image(
-                painter = painterResource(
-                    id = R.drawable.logo
-                ),
+                painter = painterResource(id = R.drawable.logo),
                 contentDescription = "Logo",
                 modifier = Modifier
                     .scale(scale.value)

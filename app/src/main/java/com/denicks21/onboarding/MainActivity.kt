@@ -30,13 +30,17 @@ class MainActivity : ComponentActivity() {
                 val systemUiController = rememberSystemUiController()
                 SideEffect {
                     systemUiController.setNavigationBarColor(
-                        GreyDark,
+                        color = GreyDark,
                         darkIcons = false
                     )
                 }
+
                 val startScreen = introViewModel.startDestination
                 val navController = rememberNavController()
-                NavGraph(navController = navController, startDestination = startScreen.value)
+                NavGraph(
+                    navController = navController,
+                    startDestination = startScreen.value
+                )
             }
         }
     }

@@ -22,9 +22,7 @@ fun TopComponent(
     onBackClick: () -> Unit = {},
     onSkipClick: () -> Unit = {},
 ) {
-    Box(
-        modifier = Modifier.fillMaxWidth()
-    ) {
+    Box(modifier = Modifier.fillMaxWidth()) {
         IconButton(
             onClick = onBackClick,
             modifier = Modifier.align(Alignment.CenterStart)

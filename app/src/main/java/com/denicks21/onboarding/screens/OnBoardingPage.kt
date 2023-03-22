@@ -54,9 +54,7 @@ fun OnBoardingPage(
                     pagerState.scrollToPage(pagerState.currentPage - 1)
                 }
             },
-            onSkipClick = {
-                navController.navigate(NavScreens.HomePage.route)
-            }
+            onSkipClick = { navController.navigate(NavScreens.HomePage.route) }
         )
         HorizontalPager(
             modifier = Modifier.weight(7f),
@@ -64,9 +62,7 @@ fun OnBoardingPage(
             state = pagerState,
             verticalAlignment = Alignment.CenterVertically
         ) { position ->
-            PagerScreen(
-                onBoardingScreen = pages[position]
-            )
+            PagerScreen(onBoardingScreen = pages[position])
         }
         HorizontalPagerIndicator(
             modifier = Modifier
@@ -132,36 +128,24 @@ fun PagerScreen(onBoardingScreen: OnBoardingScreen) {
 @Composable
 @Preview(showBackground = true)
 fun FirstOnBoardingScreen() {
-    Column(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        PagerScreen(
-            onBoardingScreen = OnBoardingScreen.FirstScreen
-        )
+    Column(modifier = Modifier.fillMaxSize()) {
+        PagerScreen(onBoardingScreen = OnBoardingScreen.FirstScreen)
     }
 }
 
 @Composable
 @Preview(showBackground = true)
 fun SecondOnBoardingScreen() {
-    Column(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        PagerScreen(
-            onBoardingScreen = OnBoardingScreen.SecondScreen
-        )
+    Column(modifier = Modifier.fillMaxSize()) {
+        PagerScreen(onBoardingScreen = OnBoardingScreen.SecondScreen)
     }
 }
 
 @Composable
 @Preview(showBackground = true)
 fun ThirdOnBoardingScreen() {
-    Column(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        PagerScreen(
-            onBoardingScreen = OnBoardingScreen.ThirdScreen
-        )
+    Column(modifier = Modifier.fillMaxSize()) {
+        PagerScreen(onBoardingScreen = OnBoardingScreen.ThirdScreen)
     }
 }
 

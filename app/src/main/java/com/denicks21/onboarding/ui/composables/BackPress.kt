@@ -6,10 +6,10 @@ import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
 import androidx.compose.runtime.*
 
 @Composable
-fun CustomBackPress(
+fun BackPress(
     backPressedDispatcher: OnBackPressedDispatcher? =
         LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher,
-    onBackPressed: () -> Unit
+    onBackPressed: () -> Unit,
 ) {
     val currentOnBackPressed by rememberUpdatedState(newValue = onBackPressed)
     val backCallback = remember {
@@ -22,9 +22,6 @@ fun CustomBackPress(
 
     DisposableEffect(key1 = backPressedDispatcher) {
         backPressedDispatcher?.addCallback(backCallback)
-
-        onDispose {
-            backCallback.remove()
-        }
+        onDispose { backCallback.remove() }
     }
 }

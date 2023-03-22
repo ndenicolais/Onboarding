@@ -12,7 +12,10 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 
 @OptIn(ExperimentalAnimationApi::class, ExperimentalPagerApi::class)
 @Composable
-fun NavGraph(navController: NavHostController, startDestination: String) {
+fun NavGraph(
+    navController: NavHostController,
+    startDestination: String
+) {
     NavHost(
         navController = navController,
         startDestination = startDestination
