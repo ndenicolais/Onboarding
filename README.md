@@ -13,19 +13,8 @@ The purpose of Onboarding screen can have different aspects, for example:<br/>
 - Allow users to customize certain aspects of the application.
 - And many other customizations...
 
-## 🔨  How to install and run the project
-Clone this repository :<br/>
-`
-git clone https://github.com/ndenicolais/ComposeOnBoarding.git
-`
-
-Import the project into Android Studio :
-
-1. File -> New -> Import Project
-2. Browse to <path_to_project>
-3. Click "OK"
-
-## 🛠️ Built with
+## ⚡ Structure
+### Tech Stacks
 #### Dagger Hilt
 
 Hilt is a dependency injection library for Android that reduces the boilerplate of doing manual dependency injection in your project. Hilt provides a standard way to use DI in your application by providing containers for every Android class in your project and managing their lifecycles automatically. Hilt is built on top of the popular DI library Dagger to benefit from the compile-time correctness, runtime performance, scalability, and Android Studio support that Dagger provides.
@@ -42,40 +31,40 @@ The ViewModel class is a business logic or screen level state holder. It exposes
 #### Pager
 A library which provides paging layouts for Jetpack Compose. It has similar proprieties of Android's ViewPager.
 
-## 📚 Package Structure
+## 🛠️ Package Structure
 
 ```
-com.denicks21.roomdatabase      # ROOT PACKAGE
+com.denicks21.roomdatabase      # Root Package
 │
-├── di                          # DI FOLDER
+├── di                          # DI folder
 │   ├── AppModule               # Inject repository in the constructor.
 |
-├── navigation                  # NAVIGATION FOLDER
+├── navigation                  # Navigation folder
 │   ├── NavGraph                # Contains all of app destinations and actions.
 │   └── NavScreens              # Contains a sealed class with object corresponds to a screen and its routes.
 │   └── OnBoardingScreens       # Contains a sealed class with object corresponds to the onboarding's screen and its routes.
 |
-├── repository                  # REPOSITORY FOLDER
+├── repository                  # Repository folder
 │   ├── DataStoreRepository     # Repository to access Dao.
 |
-├── screen                      # SCREENS FOLDER
+├── screen                      # App screens folder
 |   │   ├── HomePage            # Main page of the app. It appear after clicking the final button.
 |   │   ├── IntroPage           # Splashscreen of the app.
 |   │   ├── OnBoardingPage      # Page containing onboarding structure.
 │
-├── ui                          # UI FOLDER
-│   ├── components              # Composable components folder
+├── ui                          # UI resources folder
+│   ├── composables             # Composable components folder
 |   │   ├── BackPress           # Component that control and prevent back button action.
 |   │   ├── FinishButton        # Button that completes the onboarding.
 |   │   ├── TopElements         # Top elements of onboarding component.
 |
-├── theme                       # THEME FOLDER
+├── theme                       # Theme components folder
 |   │   ├── Color               # Color palette used by the app.
 |   │   ├── Shape               # Components shapes of Compose used by the app.
 |   │   ├── Theme               # Theme used by the app.
 |   │   ├── Type                # Typography styles for the fonts used by the app.
 |
-├── viewmodels                  # VIEWMODELS FOLDER
+├── viewmodels                  # ViewModel folder
 |   │   ├── HomeViewModel       # Model that interact with repository class.
 |   │   ├── IntroViewModel      # Model that interact with repository class.
 │
@@ -88,26 +77,3 @@ com.denicks21.roomdatabase      # ROOT PACKAGE
 <img height="500em" src="screenshots/Screenshot01.png" title="Onboarding's screen preview">
 <img height="500em" src="screenshots/Screenshot02.png" title="Onboarding's screen preview">
 <img height="500em" src="screenshots/Screenshot03.png" title="Onboarding's screen preview">
-
-## 📃 License
-MIT License
-
-Copyright 2023 Nicola De Nicolais
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
