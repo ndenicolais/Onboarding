@@ -21,7 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.denicks21.onboarding.R
-import com.denicks21.onboarding.ui.theme.GreyDark
+import com.denicks21.onboarding.ui.theme.DarkGrey
 import kotlinx.coroutines.delay
 
 @Composable
@@ -37,11 +37,11 @@ fun IntroPage(navController: NavHostController) {
             )
         )
         delay(500L)
-        navController.navigate("OnBoarding")
+        navController.navigate("Onboarding")
     }
     Box(
-        contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
     ) {
         Column(
             modifier = Modifier.fillMaxSize(),
@@ -51,7 +51,7 @@ fun IntroPage(navController: NavHostController) {
             Text(
                 text = stringResource(id = R.string.app_name),
                 modifier = Modifier.fillMaxWidth(),
-                color = GreyDark,
+                color = DarkGrey,
                 fontSize = 50.sp,
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center

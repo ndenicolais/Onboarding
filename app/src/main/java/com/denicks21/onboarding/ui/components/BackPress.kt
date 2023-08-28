@@ -1,4 +1,4 @@
-package com.denicks21.onboarding.ui.composables
+package com.denicks21.onboarding.ui.components
 
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.OnBackPressedDispatcher

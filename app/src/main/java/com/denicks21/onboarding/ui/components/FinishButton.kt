@@ -1,4 +1,4 @@
-package com.denicks21.onboarding.ui.composables
+package com.denicks21.onboarding.ui.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi
@@ -11,10 +11,10 @@ import androidx.compose.material.icons.filled.Verified
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.denicks21.onboarding.ui.theme.GreyDark
+import com.denicks21.onboarding.ui.theme.DarkGrey
+import com.denicks21.onboarding.ui.theme.LightYellow
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.PagerState
 
@@ -28,17 +28,16 @@ fun FinishButton(
 ) {
     Row(
         modifier = modifier.padding(horizontal = 80.dp),
-        verticalAlignment = Alignment.Top,
+        verticalAlignment = Alignment.Bottom,
         horizontalArrangement = Arrangement.Center
     ) {
         AnimatedVisibility(
             modifier = Modifier.fillMaxWidth(),
-            visible = pagerState.currentPage == 2
+            visible = pagerState.currentPage == 3
         ) {
             FloatingActionButton(
                 onClick = onClick,
-                backgroundColor = GreyDark,
-                contentColor = Color.White
+                backgroundColor = DarkGrey
             ) {
                 Row(
                     modifier = Modifier.fillMaxSize(),
@@ -48,12 +47,13 @@ fun FinishButton(
                     Text(
                         text = "Finish",
                         modifier = Modifier.padding(end = 10.dp),
-                        color = Color.White,
+                        color = LightYellow,
                         fontSize = 18.sp
                     )
                     Icon(
                         imageVector = Icons.Filled.Verified,
-                        contentDescription = "Finish"
+                        contentDescription = "Finish",
+                        tint = LightYellow
                     )
                 }
             }

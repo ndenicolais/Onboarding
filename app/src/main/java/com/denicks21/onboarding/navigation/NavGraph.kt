@@ -7,7 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.denicks21.onboarding.screens.HomePage
 import com.denicks21.onboarding.screens.IntroPage
-import com.denicks21.onboarding.screens.OnBoardingPage
+import com.denicks21.onboarding.screens.OnboardingPage
 import com.google.accompanist.pager.ExperimentalPagerApi
 
 @OptIn(ExperimentalAnimationApi::class, ExperimentalPagerApi::class)
@@ -23,8 +23,8 @@ fun NavGraph(
         composable(route = NavScreens.IntroPage.route) {
             IntroPage(navController = navController)
         }
-        composable(route = NavScreens.OnBoardingPage.route) {
-            OnBoardingPage(navController = navController)
+        composable(route = NavScreens.OnboardingPage.route) {
+            OnboardingPage(navController = navController)
         }
         composable(route = NavScreens.HomePage.route) {
             HomePage()
