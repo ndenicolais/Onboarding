@@ -1,7 +1,7 @@
-# ComposeOnBoarding
+# Onboarding
 > <b>Author: Nicola De Nicolais</b>
 
-## 📍 Description
+## 📄 Description
 Android application built with Kotlin and Jetpack Compose that shows how to create an Onboarding screen design process in Compose.<br/><br/>
 Use an onboarding screen allow to show a first-time user how to get the most from your app, present information at app startup.<br/>
 The onboarding screen can be understood as a virtual unboxing of an application. Users go through a series of screens which finally directs users to the application interface.<br/>
@@ -13,58 +13,61 @@ The purpose of Onboarding screen can have different aspects, for example:<br/>
 - Allow users to customize certain aspects of the application.
 - And many other customizations...
 
-## ⚡ Structure
-### Tech Stacks
-#### Dagger Hilt
+## 🔨  How to install and run the project
+Clone this repository :<br/>
+`
+git clone https://github.com/ndenicolais/Onboarding.git
+`
 
-Hilt is a dependency injection library for Android that reduces the boilerplate of doing manual dependency injection in your project. Hilt provides a standard way to use DI in your application by providing containers for every Android class in your project and managing their lifecycles automatically. Hilt is built on top of the popular DI library Dagger to benefit from the compile-time correctness, runtime performance, scalability, and Android Studio support that Dagger provides.
+Import the project into Android Studio :
 
-### Jetpack Compose
-#### Navigation
+1. File -> New -> Import Project
+2. Browse to <path_to_project>
+3. Click "OK"
 
-Navigation refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within your app. Android Jetpack's Navigation component helps you implement navigation, from simple button clicks to more complex patterns, such as app bars and the navigation drawer.
+Create a new virtual device or connect an Android device to your computer.</br>
+Click Run to start the project on the selected device.
 
-#### ViewModel
+## 🛠️ Built with
+Kotlin</br>
+Jetpack Compose</br>
+Dagger Hilt</br>
+Pager Layout
 
-The ViewModel class is a business logic or screen level state holder. It exposes state to the UI and encapsulates related business logic. Its principal advantage is that it caches state and persists it through configuration changes. This means that your UI doesn’t have to fetch data again when navigating between activities, or following configuration changes, such as when rotating the screen.
-
-#### Pager
-A library which provides paging layouts for Jetpack Compose. It has similar proprieties of Android's ViewPager.
-
-## 🛠️ Package Structure
+## 📚 Package Structure
 
 ```
-com.denicks21.roomdatabase      # Root Package
+com.denicks21.onboarding        # Root Package
 │
-├── di                          # DI folder
+├── di                          # DI FOLDER
 │   ├── AppModule               # Inject repository in the constructor.
 |
-├── navigation                  # Navigation folder
+├── navigation                  # NAVIGATION FOLDER
 │   ├── NavGraph                # Contains all of app destinations and actions.
 │   └── NavScreens              # Contains a sealed class with object corresponds to a screen and its routes.
 │   └── OnBoardingScreens       # Contains a sealed class with object corresponds to the onboarding's screen and its routes.
 |
-├── repository                  # Repository folder
+├── repository                  # REPOSITORY FOLDER
 │   ├── DataStoreRepository     # Repository to access Dao.
 |
-├── screen                      # App screens folder
+├── screen                      # SCREENS FOLDER
 |   │   ├── HomePage            # Main page of the app. It appear after clicking the final button.
 |   │   ├── IntroPage           # Splashscreen of the app.
 |   │   ├── OnBoardingPage      # Page containing onboarding structure.
 │
-├── ui                          # UI resources folder
+├── ui                          # UI FOLDER
 │   ├── composables             # Composable components folder
 |   │   ├── BackPress           # Component that control and prevent back button action.
 |   │   ├── FinishButton        # Button that completes the onboarding.
 |   │   ├── TopElements         # Top elements of onboarding component.
 |
-├── theme                       # Theme components folder
+├── theme                       # THEME FOLDER
 |   │   ├── Color               # Color palette used by the app.
 |   │   ├── Shape               # Components shapes of Compose used by the app.
 |   │   ├── Theme               # Theme used by the app.
 |   │   ├── Type                # Typography styles for the fonts used by the app.
 |
-├── viewmodels                  # ViewModel folder
+├── viewmodels                  # VIEWMODELS FOLDER
 |   │   ├── HomeViewModel       # Model that interact with repository class.
 |   │   ├── IntroViewModel      # Model that interact with repository class.
 │
@@ -74,6 +77,4 @@ com.denicks21.roomdatabase      # Root Package
 
 ## 📎 Screenshots
 <p float="left">
-<img height="500em" src="screenshots/Screenshot01.png" title="Onboarding's screen preview">
-<img height="500em" src="screenshots/Screenshot02.png" title="Onboarding's screen preview">
-<img height="500em" src="screenshots/Screenshot03.png" title="Onboarding's screen preview">
+<img height="500em" src="images/screen.png" title="Onboarding's screen preview">
