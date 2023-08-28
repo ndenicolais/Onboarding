@@ -39,35 +39,35 @@ Pager Layout
 ```
 com.denicks21.onboarding        # Root Package
 │
-├── di                          # DI folder
+├── di                          # DI FOLDER
 │   ├── AppModule               # Inject repository in the constructor.
 |
-├── navigation                  # Navigation folder
+├── navigation                  # NAVIGATION FOLDER
 │   ├── NavGraph                # Contains all of app destinations and actions.
 │   └── NavScreens              # Contains a sealed class with object corresponds to a screen and its routes.
 │   └── OnBoardingScreens       # Contains a sealed class with object corresponds to the onboarding's screen and its routes.
 |
-├── repository                  # Repository folder
+├── repository                  # REPOSITORY FOLDER
 │   ├── DataStoreRepository     # Repository to access Dao.
 |
-├── screen                      # App screens folder
+├── screen                      # SCREENS FOLDER
 |   │   ├── HomePage            # Main page of the app. It appear after clicking the final button.
 |   │   ├── IntroPage           # Splashscreen of the app.
 |   │   ├── OnBoardingPage      # Page containing onboarding structure.
 │
-├── ui                          # UI resources folder
+├── ui                          # UI FOLDER
 │   ├── composables             # Composable components folder
 |   │   ├── BackPress           # Component that control and prevent back button action.
 |   │   ├── FinishButton        # Button that completes the onboarding.
 |   │   ├── TopElements         # Top elements of onboarding component.
 |
-├── theme                       # Theme components folder
+├── theme                       # THEME FOLDER
 |   │   ├── Color               # Color palette used by the app.
 |   │   ├── Shape               # Components shapes of Compose used by the app.
 |   │   ├── Theme               # Theme used by the app.
 |   │   ├── Type                # Typography styles for the fonts used by the app.
 |
-├── viewmodels                  # ViewModel folder
+├── viewmodels                  # VIEWMODELS FOLDER
 |   │   ├── HomeViewModel       # Model that interact with repository class.
 |   │   ├── IntroViewModel      # Model that interact with repository class.
 │
