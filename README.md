@@ -1,4 +1,4 @@
-# ComposeOnBoarding
+# Onboarding
 > <b>Author: Nicola De Nicolais</b>
 
 ## 📍 Description
@@ -34,7 +34,7 @@ A library which provides paging layouts for Jetpack Compose. It has similar prop
 ## 🛠️ Package Structure
 
 ```
-com.denicks21.roomdatabase      # Root Package
+com.denicks21.onboarding        # Root Package
 │
 ├── di                          # DI folder
 │   ├── AppModule               # Inject repository in the constructor.
@@ -74,6 +74,4 @@ com.denicks21.roomdatabase      # Root Package
 
 ## 📎 Screenshots
 <p float="left">
-<img height="500em" src="screenshots/Screenshot01.png" title="Onboarding's screen preview">
-<img height="500em" src="screenshots/Screenshot02.png" title="Onboarding's screen preview">
-<img height="500em" src="screenshots/Screenshot03.png" title="Onboarding's screen preview">
+<img height="500em" src="images/screen.png" title="Onboarding's screen preview">
